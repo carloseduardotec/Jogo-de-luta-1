@@ -1,0 +1,135 @@
+/* Importar fonte 8-bits */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    font-family: 'Press Start 2P', cursive, Arial, sans-serif;
+    overflow: hidden;
+    image-rendering: pixelated;
+}
+
+#game-container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    border: 4px solid #555;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#game-canvas {
+    background-color: #87CEEB;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#hud {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: white;
+    font-size: 12px;
+}
+
+.player-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.health-bar {
+    width: 200px;
+    height: 20px;
+    background-color: #333;
+    border: 2px solid #fff;
+    margin-top: 5px;
+}
+
+.health-fill {
+    height: 100%;
+    transition: width 0.3s;
+}
+
+#player1-health {
+    background-color: #f44336;
+    width: 100%;
+}
+
+#player2-health {
+    background-color: #2196F3;
+    width: 100%;
+}
+
+#controls {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+#start-screen, #game-over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 10;
+}
+
+#game-over {
+    display: none;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    border: 2px solid white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 12px;
+    margin: 5px 0;
+    text-align: center;
+}
