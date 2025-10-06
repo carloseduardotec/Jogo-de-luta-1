@@ -15,10 +15,10 @@ let gameOver = false;
 
 // Carregar imagens dos personagens
 const luffyImg = new Image();
-luffyImg.src = "accent/Luffy1.png"; // arquivo do Luffy na mesma pasta do HTML
+luffyImg.src = "Luffy1.png"; // arquivo do Luffy na mesma pasta do HTML
 
 const gokuImg = new Image();
-gokuImg.src = "accent/goku.png"; // arquivo do Goku na mesma pasta do HTML
+gokuImg.src = "goku.png"; // arquivo do Goku na mesma pasta do HTML
 
 // Personagens
 const player1 = {
@@ -305,4 +305,5 @@ function render() {
 }
 
 // Inicializar o jogo quando a página carregar
+
 window.addEventListener('load', init);
